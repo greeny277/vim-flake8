@@ -37,6 +37,7 @@ If you don't want to use the `<F7>` key for flake8-checking, simply remap it to
 another key.  It autodetects whether it has been remapped and won't register
 the `<F7>` key if so.  For example, to remap it to `<F3>` instead, use:
 
+    let no_flake8_maps = 1
     autocmd FileType python map <buffer> <F3> :call Flake8()<CR>
 
 For flake8 configuration options please consult the following page:
